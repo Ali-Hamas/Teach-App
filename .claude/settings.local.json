@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr /n /r \"<<<<<<<\\|=======\\|>>>>>>>\")",
+      "Bash(powershell -Command \"Select-String -Path ''D:\\Teachapp-main\\src\\pages\\PDFViewerPage.jsx'' -Pattern ''<<<<<<<|=======|>>>>>>>|HEAD''\")",
+      "Bash(powershell -Command \"Get-Content ''D:\\Teachapp-main\\src\\pages\\PDFViewerPage.jsx'' -TotalCount 55\")",
+      "Bash(npm run dev)",
+      "Bash(timeout 15s npm run dev)",
+      "Bash(npx vite --port 3000)",
+      "Bash(dir /s /b)",
+      "Bash(powershell -Command \"Get-ChildItem -Path . -Recurse -File | ForEach-Object { $_FullName }\")",
+      "Bash(dir src /s)",
+      "Bash(npx vite --port 4000)",
+      "Bash(npx vite --port 4000 --open)",
+      "Bash(npx vite --port 5000)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:4000)",
+      "Bash(npx vite --port 5001)"
+    ]
+  }
+}
